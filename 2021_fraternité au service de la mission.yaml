@@ -1,0 +1,15 @@
+name: La fraternité au service de la mission
+shortname: FSM
+type: pastoral letter
+edition:
+    name: Diocèse de Paris
+    shortname: Diocèse de Paris
+    lang: FR
+uri: https://www.paris.catholique.fr/lettre-pastorale-de-mgr-michel.html
+    
+description: >
+    Lettre pastorale de Mgr Michel Aupetit
+    “La fraternité au service de la mission”
+    pour le diocèse de Paris.
+
+version: 1
