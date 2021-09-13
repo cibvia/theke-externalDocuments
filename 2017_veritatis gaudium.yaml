@@ -1,0 +1,16 @@
+name: Veritatis Gaudium
+shortname: VG
+type: apostolic constitution
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+    lang: FR
+uri: https://www.vatican.va/content/francesco/fr/apost_constitutions/documents/papa-francesco_costituzione-ap_20171208_veritatis-gaudium.html
+    
+description: >
+    Constitution apostolique
+    Veritatis Gaudium
+    sur les universités
+    et les facultés ecclésiastiques
+
+version: 1
