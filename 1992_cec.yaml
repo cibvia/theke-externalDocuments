@@ -1,12 +1,12 @@
 name: Catéchisme de l'Église Catholique
 shortname: CEC
+lang: FR
 type: magister
 edition:
     name: Libreria Editrice Vaticana
     shortname: Libreria Editrice Vaticana
-    lang: FR
 uri: https://www.vatican.va/archive/FRA0013/_INDEX.HTM
-    
+
 description: >
     Résumé de la foi, de l'enseignement et de la morale de l'Église Catholique publié en 1992.  
 

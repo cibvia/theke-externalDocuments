@@ -1,10 +1,10 @@
 name: Veritatis Splendor
 shortname: VS
+lang: FR
 type: encyclical
 edition:
     name: Libreria Editrice Vaticana
     shortname: Libreria Editrice Vaticana
-    lang: FR
 uri: https://www.vatican.va/content/john-paul-ii/fr/encyclicals/documents/hf_jp-ii_enc_06081993_veritatis-splendor.html
     
 description: >
