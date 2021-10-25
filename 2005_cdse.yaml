@@ -1,0 +1,13 @@
+name: Compendium de la doctrine sociale de l'Église catholique
+shortname: CDSE
+lang: FR
+type: magister
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/roman_curia/pontifical_councils/justpeace/documents/rc_pc_justpeace_doc_20060526_compendio-dott-soc_fr.html
+    
+description: >
+    Synthèse de la doctrine sociale de l'Église catholique.
+
+version: 1
