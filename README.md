@@ -32,3 +32,38 @@ Pour mettre à jour votre collection de fiches à partir du dépôt git, utilise
 
 * `cd ~/.local/share/theke/external`
 * `git pull`
+
+## Règles de nettoyage des documents
+
+(fonctionnalité expérimentale)
+
+Chaque fiche peut contenir des règles de nettoyage permettant un plus bel affichage des documents dans Theke.
+
+**Attention.** Cette fonctionnalité n'est pas encore disponible dans la version principale de Theke.
+
+### Syntaxe
+
+Les règles de nettoyage aide Theke à isoler le contenu d'un document externe et à éliminer tout ce qui est inutile. Ces indications sont données à partir d'un certain nombre de mots clés et de [sélecteurs](https://facelessuser.github.io/soupsieve/selectors/).
+
+Voici un exemple de règles.
+
+```
+cleaning_rules:
+    version: 1
+    content:
+        selector: div.documento div.text:nth-child(2)
+
+    remove:
+        - p[align=center]:has(:not(b))
+
+    layouts:
+        h2:
+            selector: p[align=center]:has(b)
+        h3:
+            selector: p:has(b)
+```
+
+* `version` : numéro de version de l'API (pour le moment 1).
+* `content` (obligatoire) : désigne le contenu du document.
+* `remove` : liste de balises à supprimer.
+* `layouts` : règles permettant d'identifier les éléments structurants du document.
