@@ -1,0 +1,37 @@
+name: Amoris Lætitia
+shortname: AL
+lang: FR
+type: apostolic exhortation
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/francesco/fr/apost_exhortations/documents/papa-francesco_esortazione-ap_20160319_amoris-laetitia.html
+    
+description: >
+    Exhortation apostolique
+    post-synodale
+    Amoris Lætitia
+    du saint-père
+    François
+    aux évêques,
+    aux prêtres et aux diacres,
+    aux personnes consacrées,
+    aux époux chrétiens
+    et à tous les fidèles laïcs
+    sur l'amour dans la famille.
+
+version: 1
+
+cleaning_rules:
+    version: 1
+    content:
+        selector: div.documento div.text:nth-child(2)
+
+    remove:
+        - p[align=center]:has(:not(b))
+
+    layouts:
+        h2:
+            selector: p[align=center]:has(b)
+        h3:
+            selector: p:has(b)
