@@ -1,0 +1,23 @@
+name: Iuvenescit Ecclesia
+shortname: IE
+lang: FR
+type: litterae
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20160516_iuvenescit-ecclesia_fr.html
+
+author: François
+publication: 2016/05/16
+    
+description: >
+    Lettre
+    Iuvenescit Ecclesia
+    aux Évêques de l’Église catholique
+    sur la relation entre les dons
+    hiérarchiques et charismatiques
+    pour la vie et la mission
+    de l’Église.
+
+version: 1

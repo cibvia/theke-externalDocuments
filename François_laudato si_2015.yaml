@@ -1,0 +1,22 @@
+name: Laudato Si'
+shortname: LS
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/francesco/fr/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html
+
+author: François
+publication: 2015/05/24
+    
+description: >
+    Lettre encyclique
+    Laudato Si'
+    du saint-père
+    François
+    sur la sauvegarde de la
+    maison commune
+
+version: 1
