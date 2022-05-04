@@ -1,0 +1,26 @@
+name: Evangelium vitæ
+shortname: EV
+lang: FR
+type: litteræ encyclicæ
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/encyclicals/documents/hf_jp-ii_enc_25031995_evangelium-vitae.html
+
+author: Jean-Paul II
+publication: 1995/03/25
+    
+description: >
+    Lettre encyclique
+    Evangelium vitæ
+    du souverain pontife
+    Jean-Paul II
+    aux évêques,
+    aux presbytres et aux diacres,
+    aux religieux et aux religieuses,
+    aux fidèles laïcs et à toutes
+    les personnes de bonne volonté
+    sur la valeur et l'inviolabilité
+    de la vie humaine.
+
+version: 1

@@ -1,0 +1,47 @@
+name: Sollicitudo rei socialis
+shortname: SRS
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/encyclicals/documents/hf_jp-ii_enc_30121987_sollicitudo-rei-socialis.html
+
+author: Jean-Paul II
+publication: 1987/12/30
+    
+description: >
+    Lettre encyclique
+    Sollicitudo rei socialis
+    du souverain pontife Jean-Paul II
+    aux évêques
+    aux prêtres
+    aux familles religieuses
+    aux fils et filles dans l'Église
+    et à tous les hommes de bonne volonté
+    à l'occasion du 20e anniversaire
+    de l'encyclique Populorum progressio
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div[class=documento] div[class=testo]
+    
+  remove:
+    - p[align=center]:nth-child(-n+2)
+  
+  unwrap:
+    - font
+
+  layouts:
+    h2:
+      selector: "p[align=center]"
+    p:
+      selector: p
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number
+      

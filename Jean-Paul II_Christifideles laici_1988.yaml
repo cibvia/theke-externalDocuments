@@ -1,0 +1,41 @@
+name: Christifideles laici
+shortname: CL
+lang: FR
+type: adhortatio apostolica
+edition:
+  name: Libreria Editrice Vaticana
+  shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/apost_exhortations/documents/hf_jp-ii_exh_30121988_christifideles-laici.html
+
+author: Jean-Paul II
+publication: 1988/12/30
+    
+description: >
+  Exhortation apostolique
+  post-synodale
+  Christifideles laici
+  de sa saintété le pape
+  Jean-Paul II
+  sur la vocation
+  et la mission des laïcs
+  dans l'Église et dans le monde
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div.container
+
+  layouts:
+    h2:
+      selector: center p:has(b)
+    h3:
+      selectors:
+        - "p:has(> b i)"
+        - "p:has(> i b)"
+    p:
+      selector: p
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number

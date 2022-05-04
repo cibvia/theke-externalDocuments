@@ -1,0 +1,47 @@
+name: Centesimus annus
+shortname: CA
+lang: FR
+type: litteræ encyclicæ
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/encyclicals/documents/hf_jp-ii_enc_01051991_centesimus-annus.html
+
+author: Jean-Paul II
+publication: 1991/05/01
+    
+description: >
+    Lettre encyclique
+    Centesimus annus
+    du souverain pontife Jean-Paul II
+    à ses frères dans l'épiscopat
+    au clergé
+    aux familles religieuses
+    aux fidèles de l'Église catholique
+    et à tous les hommes de bonne volonté
+    sur le travail humain
+    à l'occasion du centenaire
+    de l'encyclique Rerum novarum
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div[class=documento] div[class=testo]
+    
+  remove:
+    - center:nth-child(-n+1)
+  
+  unwrap:
+    - font
+
+  layouts:
+    h2:
+      selector: "center"
+    p:
+      selector: p
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number
+      

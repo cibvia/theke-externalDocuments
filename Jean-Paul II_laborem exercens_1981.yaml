@@ -1,0 +1,51 @@
+name: Laborem exercens
+shortname: LB
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/encyclicals/documents/hf_jp-ii_enc_14091981_laborem-exercens.html
+
+author: Jean-Paul II
+publication: 1981/09/14
+    
+description: >
+    Lettre encyclique
+    Laborem exercens
+    du souverain pontife Jean-Paul II
+    adressée
+    à ses frères dans l'épiscopat
+    aux prêtres
+    aux familles religieuses
+    à ses fils et filles dans l'Église
+    et à tous les hommes de bonne volonté
+    sur le travail humain
+    à l'occasion du 90e anniversaire
+    de l'encyclique Rerum novarum
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div[class=documento] div[class=testo]
+    
+  remove:
+    - p[align=center]:nth-child(-n+2)
+  
+  unwrap:
+    - font
+
+  layouts:
+    h2:
+      selector: "p[align=center]"
+    h3:
+      selector: "p:has(> b > i)"
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number
+    p:
+      selector: p
+      

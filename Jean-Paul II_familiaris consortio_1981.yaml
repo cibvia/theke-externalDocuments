@@ -1,0 +1,26 @@
+name: Familiaris Consortio
+shortname: FC
+lang: FR
+type: adhortatio apostolica
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/apost_exhortations/documents/hf_jp-ii_exh_19811122_familiaris-consortio.html
+
+author: Jean-Paul II
+publication: 1981/11/22
+
+description: >
+    Exhortation apostolique
+    Familiaris Consortio
+    de sa sainteté le pape
+    Jean-Paul II
+    à l'épiscopat,
+    au clergé et aux fidèles
+    de toute l'Église catholique
+    sur les tâches
+    de la famille chrétienne
+    dans le monde d'aujourd'hui.
+
+version: 1
