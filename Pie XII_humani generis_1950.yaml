@@ -1,0 +1,36 @@
+name: Humani generis
+shortname: HG
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/pius-xii/fr/encyclicals/documents/hf_p-xii_enc_12081950_humani-generis.html
+
+author: Pie XII
+publication: 1950/08/12
+    
+description: >
+    Lettre encyclique
+    de sa sainteté le pape Pie XII
+    sur quelques opinions fausses
+    qui menacent de ruiner
+    les fondements de la doctrine catholique.
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div[class=documento] div[class=testo]
+    
+  remove:
+    - center:nth-child(-n+1)
+  
+  unwrap:
+    - font
+
+  layouts:
+    p:
+      selector: p

@@ -1,0 +1,31 @@
+name: Mystici corporis
+shortname: MC
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+  name: Libreria Editrice Vaticana
+  shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/pius-xii/fr/encyclicals/documents/hf_p-xii_enc_29061943_mystici-corporis-christi.html
+
+author: Pie XII
+publication: 1943/06/29
+
+description: >
+  Lettre encyclique
+  de sa sainteté le pape Pie XII
+  sur le corps mystique de Jésus-Christ
+  et sur notre union en lui avec le Christ
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div.documento div.testo
+
+  remove:
+    - p[align=center]
+  layouts:
+    p:
+      selector: p
