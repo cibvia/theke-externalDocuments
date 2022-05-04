@@ -1,0 +1,30 @@
+name: Mortalium animos
+shortname: MA
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+  name: Libreria Editrice Vaticana
+  shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/pius-xi/fr/encyclicals/documents/hf_p-xi_enc_19280106_mortalium-animos.html
+
+author: Pie XI
+publication: 1928/01/06
+
+description: >
+  Lettre encyclique
+  de sa sainteté le pape Pie XI
+  sur l'unité de la véritable Église.
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div.documento div.testo
+
+  remove:
+    - p[align=center]
+  layouts:
+    p:
+      selector: p
