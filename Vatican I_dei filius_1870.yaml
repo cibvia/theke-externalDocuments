@@ -1,0 +1,37 @@
+name: Dei Filius
+shortname: DF
+lang: FR
+type: constitutio dogmatica
+
+edition:
+    name: Avancez au large
+    shortname: Avancez au large
+uri: http://avancezaularge.free.fr/vatican1_dei_filius.htm
+
+author: Vatican I
+publication: 1870/04/24
+    
+description: >
+    Constitution dogmatique
+    sur la foi catholique
+    décrétée dans la IIIe session du Concile Œcuménique du Vatican.
+    Lumen Gentium
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: table:nth-child(2) td[valign=top]
+  
+  unwrap:
+    - table
+    - tbody
+    - tr
+    - td
+
+  layouts:
+    h3:
+      selector: "p:has(> b i)"
+    p:
+      selector: p
