@@ -1,0 +1,19 @@
+name: Populorum progressio
+shortname: PP
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/paul-vi/fr/encyclicals/documents/hf_p-vi_enc_26031967_populorum.html
+
+author: Paul VI
+publication: 1967/03/26
+    
+description: >
+    Lettre encyclique
+    de sa sainteté le pape Paul VI
+    sur le développement des peuples
+
+version: 1

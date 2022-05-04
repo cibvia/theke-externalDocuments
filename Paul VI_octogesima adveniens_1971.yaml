@@ -1,0 +1,44 @@
+name: Octogesima adveniens
+shortname: OA
+lang: FR
+type: epistula apostolica
+
+edition:
+  name: Libreria Editrice Vaticana
+  shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/paul-vi/fr/apost_letters/documents/hf_p-vi_apl_19710514_octogesima-adveniens.html
+
+author: Paul VI
+publication: 1971/05/14
+    
+description: >
+    Lettre apostolique
+    de sa sainteté le pape Paul VI
+    Octogesima adveniens
+    à monsieur le cardinal Maurice Roy,
+    président du conseil des laïcs
+    et de la commission pontificale « justice et paix »
+    à l'occasion du 80e anniversaire de l'encyclique
+    Rerum novarum
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div.documento div.testo
+
+  remove:
+    - p[align=center]
+
+  unwrap:
+    - font
+
+  layouts:
+    h3:
+      selector: "p[align=left]:has(b > i)"
+    p:
+      selector: p[align=left]
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number
