@@ -1,0 +1,33 @@
+name: Dignitatis Humanæ
+shortname: DH
+lang: FR
+type: declaratio
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_fr.html
+
+author: Vatican II
+publication: 1965/12/07
+
+description: >
+    Déclaration sur la liberté religieuse
+    Dignitatis humanæ
+
+version: 1
+
+cleaning_rules:
+    version: 1
+    content:
+        selector: td[align=left]
+
+    remove:
+        - p[align=center]:has(:not(b))
+        - p[align=right]:first-child
+
+    layouts:
+        h2:
+            selector: p[align=center]:has(b)
+        h3:
+            selector: p:has(b)

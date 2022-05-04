@@ -1,0 +1,44 @@
+name: Lumen Gentium
+shortname: LG
+lang: FR
+type: constitutio dogmatica
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_fr.html
+
+author: Vatican II
+publication: 1964/11/21
+
+description: >
+    Constitution dogmatique sur l'Église
+    Lumen Gentium
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: table:nth-child(2)
+    
+  remove:
+    - p[align=right]
+    - p[align=center]:nth-child(-n+2)
+  
+  unwrap:
+    - table
+    - tbody
+    - tr
+    - td
+
+  layouts:
+    h2:
+      selector: "p[align=center]:has(b)"
+    h3:
+      selector: "p[align=left]:has(> b > i)"
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number
+    p:
+      selector: p
