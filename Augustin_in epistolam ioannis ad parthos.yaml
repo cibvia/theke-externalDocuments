@@ -1,0 +1,40 @@
+name: Commentaire de la première épître de saint Jean
+shortname: CPsJ
+lang: FR
+type: tractatus
+edition:
+    name: Bibliothèque monastique Saint Benoît
+    shortname: Bibliothèque monastique Saint Benoît
+uri: https://www.bibliotheque-monastique.ch/bibliotheque/bibliotheque/saints/augustin/jean/parthes/index.htm
+
+author: Augustin
+publication: None
+
+description: >
+    Commentaire de la première épître de saint Jean
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div[class=Section1]
+  
+  remove:
+    - h1
+    - p:nth-child(1)
+    - p[align=center]
+    - p[class=MsoToc1]
+    - p[class=MsoToc2]
+  
+  unwrap:
+    - table
+    - tbody
+    - tr
+    - td
+
+  layouts:
+    h2:
+      selector: h2
+    p:
+      selector: p
