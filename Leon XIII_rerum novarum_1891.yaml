@@ -1,0 +1,37 @@
+name: Rerum novarum
+shortname: RN
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.doctrine-sociale-catholique.fr/les-textes-officiels/189-rerum-novarum
+
+author: Léon XIII
+publication: 1891/05/15
+    
+description: >
+    Lettre encyclique
+    de sa sainteté le pape Léon XIII
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div#Text
+    
+  remove:
+    - div[class=adresse]
+
+  layouts:
+    h2:
+      selector: h2
+    h3:
+      selector: h3
+    p:
+      selector: div[class=paragraphe]
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number

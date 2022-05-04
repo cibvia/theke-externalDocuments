@@ -1,0 +1,20 @@
+name: Au milieu des sollicitudes
+shortname: AMS
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+  name: Libreria Editrice Vaticana
+  shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/leo-xiii/fr/encyclicals/documents/hf_l-xiii_enc_16021892_au-milieu-des-sollicitudes.html
+
+author: Léon XIII
+publication: 1892/02/16
+
+description: >
+  Lettre encyclique
+  de sa sainteté le pape Léon XIII
+  à Nos Vénérables Frères les Archevêques, Évêques,
+  au clergé et à tous les catholiques de France.
+
+version: 1
