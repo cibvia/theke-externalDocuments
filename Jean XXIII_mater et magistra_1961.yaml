@@ -1,0 +1,37 @@
+name: Mater et Magistra
+shortname: MM
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.doctrine-sociale-catholique.fr/les-textes-officiels/200-mater-et-magistra#Text
+
+author: Jean XXIII
+publication: 1961/05/15
+    
+description: >
+    Lettre encyclique
+    de sa sainteté le pape Jean XXIII
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div#Text
+  
+  unwrap:
+    - font
+
+  layouts:
+    h2:
+      selector: h2
+    h3:
+      selector: h3
+    p:
+      selector: div[class=paragraphe]
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number

@@ -1,0 +1,21 @@
+name: Pacem in terris
+shortname: PT
+lang: FR
+type: litteræ encyclicæ
+
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-xxiii/fr/encyclicals/documents/hf_j-xxiii_enc_11041963_pacem.html
+
+author: Jean XXIII
+publication: 1963/04/11
+    
+description: >
+     Lettre encyclique
+     du souverain pontife Jean XXIII
+     
+     Sur la paix entre toutes les nations,
+     fondée sur la vérité, la justice, la charité, la liberté.
+
+version: 1
