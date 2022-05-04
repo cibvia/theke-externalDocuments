@@ -1,0 +1,24 @@
+name: Spe salvi
+shortname: SS
+lang: FR
+type: litteræ encyclicæ
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/benedict-xvi/fr/encyclicals/documents/hf_ben-xvi_enc_20071130_spe-salvi.html
+
+author: Benoît XVI
+publication: 2007/11/30
+    
+description: >
+    Lettre encyclique
+    Spe salvi
+    du souverain pontife
+    Benoît XVI
+    aux évêques
+    aux prêtres et aux diacres
+    aux personnes consacrées
+    et à tous les fidèles laïcs
+    sur l'espérance chrétien
+
+version: 1
