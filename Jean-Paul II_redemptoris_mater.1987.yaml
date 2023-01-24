@@ -1,0 +1,41 @@
+name: Redemptoris Mater
+shortname: RM
+lang: FR
+type: litteræ encyclicæ
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/encyclicals/documents/hf_jp-ii_enc_25031987_redemptoris-mater.html
+
+author: Jean-Paul II
+publication: 1987/03/25
+    
+description: >
+        LETTRE ENCYCLIQUE
+        REDEMPTORIS MATER
+        DU SOUVERAIN PONTIFE
+        JEAN-PAUL II
+        SUR LA BIENHEUREUSE VIERGE MARIE
+        DANS LA VIE DE L'ÉGLISE EN MARCHE
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div[class=documento] div[class=testo]
+    
+  remove:
+    - center:nth-child(-n+1)
+  
+  unwrap:
+    - font
+
+  layouts:
+    h2:
+      selector: "center"
+    p:
+      selector: p
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number
+      

@@ -1,0 +1,44 @@
+name: Mulieris Dignitatem
+shortname: MD
+lang: FR
+type: litteræ apostolicæ
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/john-paul-ii/fr/apost_letters/1988/documents/hf_jp-ii_apl_19880815_mulieris-dignitatem.html
+
+author: Jean-Paul II
+publication: 1988/08/15
+    
+description: >
+        LETTRE APOSTOLIQUE
+        MULIERIS DIGNITATEM
+        DU SOUVERAIN PONTIFE
+        JEAN-PAUL II
+        SUR LA
+        DIGNITÉ ET LA VOCATION
+        DE LA FEMME
+        À L'OCCASION DE L'ANNÉE MARIALE
+
+version: 1
+
+cleaning_rules:
+  version: 1
+  content:
+    selector: div[class=documento] div[class=testo]
+    
+  remove:
+    - center:nth-child(-n+1)
+  
+  unwrap:
+    - font
+
+  layouts:
+    h2:
+      selector: "center"
+    p:
+      selector: p
+      numbering:
+        pattern: ^(?P<number>\d+)\.\s?(?P<text>.*)
+        class: paragraph_number
+      

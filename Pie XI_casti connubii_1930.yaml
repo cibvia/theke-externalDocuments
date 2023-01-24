@@ -1,0 +1,19 @@
+name: Casti Connubii
+shortname: CC
+lang: FR
+type: encyclical
+edition:
+    name: Libreria Editrice Vaticana
+    shortname: Libreria Editrice Vaticana
+uri: https://www.vatican.va/content/pius-xi/fr/encyclicals/documents/hf_p-xi_enc_19301231_casti-connubii.html
+    
+description: >
+    LETTRE ENCYCLIQUE
+    DU SOUVERAIN PONTIFE PIE XI
+
+    SUR LE MARIAGE CHRÉTIEN
+    CONSIDÉRÉ AU POINT DE VUE DE LA CONDITION PRÉSENTE,
+    DES NÉCESSITÉS, DES ERREURS ET DES VICES
+    DE LA FAMILLE ET DE LA SOCIÉTÉ
+
+version: 1
